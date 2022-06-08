@@ -1,3 +1,5 @@
+[![Environment Test](https://github.com/Mussa-Codspace-org/Formlabs_DevOps_Task/actions/workflows/environment.yml/badge.svg)](https://github.com/Mussa-Codspace-org/Formlabs_DevOps_Task/actions/workflows/environment.yml)
+
 # Formlabs DevOps home assignment
 
 This repository contains a home assignment code for DevOps applicants for Formlabs.
