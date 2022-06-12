@@ -21,7 +21,7 @@ jobs:
       with: 
         username: ${{secrets.DOCKER_HUB_USERNAME}}
         password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
-        
+    - name: set lower case owner name 
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
@@ -32,7 +32,7 @@ jobs:
 #        password: ${{secrets.DOCKER_PASSWORD}}
 #        repository: ${{secrets.DOCKERHUB_REPO}}
 #        tag_with_ref: true  
-        push: true
-        tags: ${{secrets.DOCKER_HUB_USERNAME}}/${{github.event.flask_image}}:latest
+       push: true
+       tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ github.event.repository.name }}:latest
         
         
