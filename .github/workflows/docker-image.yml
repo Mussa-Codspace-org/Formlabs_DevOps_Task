@@ -33,6 +33,6 @@ jobs:
 #        repository: ${{secrets.DOCKERHUB_REPO}}
 #        tag_with_ref: true  
        push: true
-       tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ github.event.repository.name }}:latest
+#       tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ github.event.repository.name }}:latest
         
         
