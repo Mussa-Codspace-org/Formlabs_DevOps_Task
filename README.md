@@ -1,4 +1,6 @@
-[![Environment Test](https://github.com/Mussa-Codspace-org/Formlabs_DevOps_Task/actions/workflows/environment.yml/badge.svg)](https://github.com/Mussa-Codspace-org/Formlabs_DevOps_Task/actions/workflows/environment.yml)
+[![Environment Test CI](https://github.com/Mussa-Codspace-org/Formlabs_DevOps_Task/actions/workflows/environment.yml/badge.svg)](https://github.com/Mussa-Codspace-org/Formlabs_DevOps_Task/actions/workflows/environment.yml)
+
+[![Docker Image Build/Push](https://github.com/Mussa-Codspace-org/formlabs_devops_task/actions/workflows/docker-image-build.yml/badge.svg)](https://github.com/Mussa-Codspace-org/formlabs_devops_task/actions/workflows/docker-image-build.yml)
 
 # Formlabs DevOps home assignment
 
