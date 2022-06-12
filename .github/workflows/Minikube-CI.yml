@@ -25,7 +25,7 @@ jobs:
 
         eval $(minikube -p minikube docker-env)
 
-        docker build -f ./Dockerfile -t local/example .
+        docker build -f ./Dockerfile -t mussaeb/flask_image .
 
         echo -n "verifying images:"
 
