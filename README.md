@@ -2,6 +2,8 @@
 
 [![Docker Image Build/Push](https://github.com/Mussa-Codspace-org/formlabs_devops_task/actions/workflows/docker-image-build.yml/badge.svg)](https://github.com/Mussa-Codspace-org/formlabs_devops_task/actions/workflows/docker-image-build.yml)
 
+[![Minikube CI](https://github.com/Mussa-Codspace-org/formlabs_devops_task/actions/workflows/Minikube-CI.yml/badge.svg)](https://github.com/Mussa-Codspace-org/formlabs_devops_task/actions/workflows/Minikube-CI.yml)
+
 # Formlabs DevOps home assignment
 
 This repository contains a home assignment code for DevOps applicants for Formlabs.
