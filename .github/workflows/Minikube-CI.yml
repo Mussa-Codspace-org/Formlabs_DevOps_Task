@@ -1,5 +1,5 @@
 
-name: Minikube CI 
+name: Minikube CI/CD
 on: 
   push: 
     branches:
@@ -24,7 +24,7 @@ jobs:
          username: ${{secrets.DOCKER_HUB_USERNAME}}
          password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
 
-     - name: Build and push 
+     - name: Build and push to Docker hub 
        uses: docker/build-push-action@v3
        with:
          push: true 
@@ -38,22 +38,11 @@ jobs:
 
        run: kubectl get pods -A
 
-     - name: Build image
+     - name: pull and load image from dockerhub
        run: minikube image load ${{secrets.DOCKER_HUB_USERNAME}}/flask_image
-     
-   #    run: |
+        
 
-      #  export SHELL=/bin/bash
-
-       # eval $(minikube -p minikube docker-env)
-
-      #  docker build -f ./Dockerfile -t mussaeb/flask_image .
-
-     #   echo -n "verifying images:"
-
-    #    docker images        
-
-     - name: Deploy to minikube
+     - name: Deploy to kubernetes
 
        run:
 
@@ -64,6 +53,8 @@ jobs:
        run: |
 
         minikube service list
+        
+        kubectl get all
         
         minikube service flask-app-service
 
