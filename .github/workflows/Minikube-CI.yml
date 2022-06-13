@@ -47,10 +47,10 @@ jobs:
 
         minikube service list
         
-        minikube tunnel
+        minikube service flask-app-service
 
-        minikube service flask-app-service --url
-
+        kubectl get services
+        
         echo "------------------opening the service------------------"
 
         curl $(minikube service flask-app-service --url)
